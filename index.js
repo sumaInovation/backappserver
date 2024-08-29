@@ -9,7 +9,7 @@ const app = express();
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret:process.env.CLIENT_SECRET,
-  callbackURL: 'http://localhost:3000/auth/google/callback'
+  callbackURL: 'https://loginserver-bky1de3y.b4a.run/auth/google/callback'
 },
 function(accessToken, refreshToken, profile, done) {
   // Here you would typically save the user's profile information to your database
